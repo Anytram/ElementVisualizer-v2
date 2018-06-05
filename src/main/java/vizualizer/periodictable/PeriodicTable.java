@@ -12,6 +12,8 @@ import java.awt.Graphics2D;
 import java.awt.geom.Rectangle2D;
 import java.util.List;
 import javax.swing.GroupLayout;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import visualizer.database.FileDatabase;
 import visualizer.model.AdvancedElement;
 
@@ -22,14 +24,12 @@ import visualizer.model.AdvancedElement;
 public class PeriodicTable extends javax.swing.JPanel {
 
     List<AdvancedElement> allAtoms;
-    boolean drawInfo = false;
 
     /**
      * Creates new form PeriodicTable
      */
     private FileDatabase database;
     private AdvancedElement selectedAtom;
-    private String summary;
     private int width = 64;
     private int height = 64;
 
@@ -44,10 +44,6 @@ public class PeriodicTable extends javax.swing.JPanel {
         allAtoms = database.getAllAndSortByAtomicNumber();
     }
 
-    public void setSelectedAtom(String selectedAtom) {
-        summary = database.findByName(selectedAtom).getSummary();
-        drawInfo = true;
-    }
 
     public void paintComponent(Graphics g) {
 
@@ -146,9 +142,6 @@ public class PeriodicTable extends javax.swing.JPanel {
 
         Graphics2D g2 = (Graphics2D) g;
 
-        if (drawInfo) {
-            g2.drawString(summary, 0, 500);
-        }
 
         Rectangle2D rect = new Rectangle2D.Double(x, y, width, height);
         g2.setColor(Color.black);

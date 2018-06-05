@@ -8,10 +8,6 @@ package visualizer.ui.chart;
 import visualizer.database.FileDatabase;
 import java.awt.Color;
 import java.awt.Font;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.math.plot.Plot2DPanel;
 import org.math.plot.plotObjects.BaseLabel;
 
