@@ -55,9 +55,9 @@ public class StabilityPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jComboBox1, GroupLayout.PREFERRED_SIZE, 151, GroupLayout.PREFERRED_SIZE)
+                .addComponent(jComboBox1, GroupLayout.PREFERRED_SIZE, 165, GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(stabilityChart1, GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+                .addComponent(stabilityChart1, GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)

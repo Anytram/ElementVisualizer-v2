@@ -75,13 +75,13 @@ public class MainFrame extends javax.swing.JFrame {
         layout.setHorizontalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, GroupLayout.DEFAULT_SIZE, 1331, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, GroupLayout.DEFAULT_SIZE, 1351, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTabbedPane1, GroupLayout.DEFAULT_SIZE, 888, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
